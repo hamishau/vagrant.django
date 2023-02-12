@@ -21,15 +21,12 @@ vagrant up
 
 ## Edit Hosts
 
-Edit your local hosts file and add the following line:
+Windows Powershell: `notepad c:\Windows\System32\Drivers\etc\hosts`  
+Ubuntu Terminal: `sudo nano /etc/hosts`
 
-Windows Powershell:
- * `notepad c:\Windows\System32\Drivers\etc\hosts`
- * `192.168.56.10 yourapp.local`
- 
-Ubuntu Terminal:
- * `sudo nano /etc/hosts`
- * `192.168.56.10 yourapp.local`
+```
+192.168.56.10 yourapp.local
+```
  
 ## Database Connection
 Replace the `DATABASES = ...` section in `yourapp/settings.py` with the following:
