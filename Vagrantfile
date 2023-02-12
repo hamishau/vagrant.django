@@ -13,7 +13,8 @@ Vagrant.configure("2") do |config|
     sudo apt install -y postgresql postgresql-contrib
     sudo -u postgres createdb yourapp
     sudo -u postgres psql -c "ALTER USER postgres WITH PASSWORD 'admin';"
-    pip3 install -r requirements.txt
+    pip3 install django
+    pip3 install psycopg2-binary
     django-admin startproject yourapp .
   SHELL
 end

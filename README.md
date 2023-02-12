@@ -49,13 +49,6 @@ Replace the `ALLOWED_HOSTS = ...` in `yourapp/settings.py` with the following:
 ALLOWED_HOSTS = ['yourapp.local']
 ```
 
-## Installed Apps
-Add the following to the `INSTALLED_APPS = ...` section in `yourapp/settings.py`:
-
-```
-'yourapp'
-```
-
 ## Run Migrations
 
 ```
